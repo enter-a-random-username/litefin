@@ -1,3 +1,23 @@
+[!NOTE]
+This fork focuses on small adjustments and using it as desktop client.<br>
+**Pros**: Fast (WebOS are limited) and a lot of working feartures<br>
+**Cons**: Focus on 1080p UI with 4K media (lower quality settings to get smaller images). That should be more dynamic with DPR
+
+**Build**
+`npm rum build:modern` as target (normal is for TV Chromium 68) and serve `dist/modern` via web server of choice.
+
+Settings needed
+- Sidebar always on or navigation is hard without a back button.
+- Use libjs-wasm for full ASS subs
+- Hover trickplay, so it shows on mouse hover
+- Maybe force some playbacks like AV1. Test oft3en fails and often only audio needs a transcode
+
+Changes
+- Add Jellyfin 12 language filters
+- (Soon) Adjust some default settings for web/heavy mouse usage
+- Added a preview on github - static web https://enter-a-random-username.github.io/litefin/ (You can try https://demo.jellyfin.org/unstable as URL without a port and demo as user without a pasdsword)
+
+
 <h1 align="center">Litefin</h1>
 <h3 align="center">A High-Performance, Native Jellyfin Client for Samsung Tizen and LG web-OS TVs</h3>
 
